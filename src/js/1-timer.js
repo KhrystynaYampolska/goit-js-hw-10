@@ -77,7 +77,7 @@ startButton.addEventListener('click', () => {
       iziToast.show({
         message: 'Time is up!',
         position: 'topRight',
-        color: 'grey',
+        color: 'red',
       });
       document.querySelector('#datetime-picker').disabled = false;
     } else {
