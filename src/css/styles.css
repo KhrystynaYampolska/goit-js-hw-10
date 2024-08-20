@@ -1,25 +1,53 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+.timer {
+  display: flex;
+  gap: 12px;
+  padding-top: 24px;
+  font-size: 24px;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.value {
+  font-weight: bold;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+#datetime-picker {
+  width: 210px;
+  height: 20px;
+}
+
+[data-start] {
+  width: 80px;
+  height: 26px;
+}
+
+label {
+  display: block;
+}
+
+input[type='number'] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+input[type='radio'] {
+  display: inline-block;
+}
+
+fieldset {
+  display: flex;
+  width: 190px;
+  margin-bottom: 10px;
+}
+
+button[type='submit'] {
+  width: 220px;
 }
